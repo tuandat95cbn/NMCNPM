@@ -12,3 +12,6 @@ Best regard: Bình
 
 11/12/2015: Update form báo cáo. Mọi người pull về nhé.
 Đạt bổ sung mục phân tích rồi cả nhóm sẽ chuyển qua thiết kế.
+
+
+12/12/20015: Trung, Tú, Đức đặc tả dữ liệu.
