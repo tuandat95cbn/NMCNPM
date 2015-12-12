@@ -10,15 +10,20 @@ Công việc chung: Deadline 23h59' ngày 7/12/2015
 
 Best regard: Bình
 
-11/12/2015: Update form báo cáo. Mọi người pull về nhé.#
-Đạt bổ sung mục phân tích rồi cả nhóm sẽ chuyển qua thiết kế.#
+11/12/2015: Update form báo cáo. Mọi người pull về nhé.
+
+Đạt bổ sung mục phân tích rồi cả nhóm sẽ chuyển qua thiết kế.
 
 12/12/2015: Trung, Tú, Đức đặc tả dữ liệu.
 
 13/12/2015: Phân tích thiết kế.
 
-15/12/2015: Code (Trung đảm nhiệm)#
+15/12/2015: Code (Trung đảm nhiệm)
+
 16/12/2015: Kiểm thử
+
 18/12/2015: Kết luận
+
 19/12/2015: Viết báo cáo
+
 9/1/2016: Nộp bài
