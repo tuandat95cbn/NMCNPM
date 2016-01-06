@@ -1,0 +1,95 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{mdframed}
+\usepackage{amsmath}
+\newmdenv[linecolor=black,skipabove=\topsep,skipbelow=\topsep,
+leftmargin=-5pt,rightmargin=-5pt,
+innerleftmargin=5pt,innerrightmargin=5pt]{mybox}
+\usepackage[left=3cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\lstset{language=java,
+   %keywords={break,case,catch,continue,else,elseif,end,for,function,
+   %   global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily \fontsize{8}{10}\selectfont,   
+	% numbers=left,
+   frame=lrtb,
+tabsize=3
+}
+\usepackage{hyperref}  
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+
+\newcommand{\ig}{\includegraphics}
+\begin{document}
+\thispagestyle{empty}
+\thisfancypage{
+\setlength{\fboxrule}{1pt}
+\doublebox}{}
+\begin{center}
+{\fontsize{16}{19}\fontfamily{cmr}\selectfont TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI\\
+VIỆN CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG}\\
+\textbf{------------*******---------------}\\[1cm]
+\includegraphics[scale=0.13]{hust.jpg}\\[1.3cm]
+
+{\fontsize{32}{43}\fontfamily{cmr}\selectfont BÁO CÁO}\\[0.1cm]
+{\fontsize{38}{45}\fontfamily{cmr}\fontseries{b}\selectfont MÔN HỌC}\\[0.2cm]
+{\fontsize{19}{20}\fontfamily{phv}\selectfont NHẬP MÔN CÔNG NGHỆ PHẦN MỀM}\\[0.2cm]
+{\fontsize{19}{20}\fontfamily{cmr}\selectfont \emph{Đề tài: Xây dựng menu điện tử phục vụ nhà hàng}}\\[2.0cm]
+\end{center}
+\hspace{1cm}\fontsize{14}{16}\fontfamily{cmr}\selectfont \textbf{Nhóm sinh viên thực hiện:}
+
+\begin{longtable}{l c c}
+
+Họ và tên & MSSV  & Lớp\\
+Đỗ Thanh Bình &  & 84307 \\
+Nguyễn Tuấn Đạt &  20130856 & 84307 \\
+Trần Văn  Đức &  & 84307 \\
+Đặng Quang Trung & 20134145  & 84307 \\
+Phan Anh Tú & 20134501  & 84307 \\
+
+\end{longtable}
+
+\hspace{1cm}\fontsize{14}{16}\fontfamily{cmr}\selectfont \textbf{Giáo viên hướng dẫn: }TS. Nguyễn Thanh Hùng\\[2cm]
+\begin{center}
+\fontsize{16}{19}\fontfamily{cmr}\selectfont Hà Nội 01--2016
+
+\end{center}
+\newpage
+\tableofcontents
+\chapter*{Mở đầu}
+\addcontentsline{toc}{chapter}{Mở đầu}
+%to do
+
+
+
+
+
+\chapter*{Lời cảm ơn}
+\phantomsection
+\addcontentsline{toc}{chapter}{Lời cảm ơn}
+%to
+Chúng em xin chân thành cảm ơn!
+\listoftables
+\listoffigures
+\chapter{Giới thiệu Project}
+\chapter{Đặc tả}
+\chapter{Phân tích thiết kế}
+\chapter{Code}
+\chapter{Kiểm thử}
+\chapter{Kết luận}
+\chapter*{Tài liệu tham khảo}
+\phantomsection
+\addcontentsline{toc}{chapter}{Tài liệu tham khảo}
+
+\end{document}
