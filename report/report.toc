@@ -1,9 +1,9 @@
 \contentsline {chapter}{M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{3}{chapter*.2}
-\contentsline {chapter}{L\IeC {\`\ohorn }i c\IeC {\h a}m \IeC {\ohorn }n}{4}{section*.4}
-\contentsline {chapter}{\numberline {1}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u Project}{7}{chapter.1}
-\contentsline {chapter}{\numberline {2}\IeC {\DJ }\IeC {\d \abreve }c t\IeC {\h a}}{8}{chapter.2}
-\contentsline {chapter}{\numberline {3}Ph\IeC {\^a}n t\IeC {\'\i }ch thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex }}{9}{chapter.3}
-\contentsline {chapter}{\numberline {4}Code}{10}{chapter.4}
-\contentsline {chapter}{\numberline {5}Ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn }}{11}{chapter.5}
-\contentsline {chapter}{\numberline {6}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{12}{chapter.6}
-\contentsline {chapter}{T\IeC {\`a}i li\IeC {\d \ecircumflex }u tham kh\IeC {\h a}o}{13}{section*.8}
+\contentsline {chapter}{\numberline {1}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u Project}{4}{chapter.1}
+\contentsline {chapter}{\numberline {2}\IeC {\DJ }\IeC {\d \abreve }c t\IeC {\h a}}{5}{chapter.2}
+\contentsline {chapter}{\numberline {3}Ph\IeC {\^a}n t\IeC {\'\i }ch thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex }}{6}{chapter.3}
+\contentsline {chapter}{\numberline {4}Code}{7}{chapter.4}
+\contentsline {chapter}{\numberline {5}Ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn }}{8}{chapter.5}
+\contentsline {chapter}{\numberline {6}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{9}{chapter.6}
+\contentsline {chapter}{\numberline {7}Version Control}{10}{chapter.7}
+\contentsline {chapter}{T\IeC {\`a}i li\IeC {\d \ecircumflex }u tham kh\IeC {\h a}o}{11}{section*.4}
