@@ -1,9 +1,13 @@
 \contentsline {chapter}{M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{3}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u Project}{4}{chapter.1}
 \contentsline {chapter}{\numberline {2}\IeC {\DJ }\IeC {\d \abreve }c t\IeC {\h a}}{5}{chapter.2}
-\contentsline {chapter}{\numberline {3}Ph\IeC {\^a}n t\IeC {\'\i }ch thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex }}{6}{chapter.3}
-\contentsline {chapter}{\numberline {4}Code}{7}{chapter.4}
-\contentsline {chapter}{\numberline {5}Ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn }}{8}{chapter.5}
-\contentsline {chapter}{\numberline {6}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{9}{chapter.6}
-\contentsline {chapter}{\numberline {7}Version Control}{10}{chapter.7}
-\contentsline {chapter}{T\IeC {\`a}i li\IeC {\d \ecircumflex }u tham kh\IeC {\h a}o}{11}{section*.4}
+\contentsline {section}{\numberline {2.1}\IeC {\DJ }\IeC {\d \abreve }c t\IeC {\h a} ch\IeC {\'\uhorn }c n\IeC {\u a}ng}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}\IeC {\DJ }\IeC {\d \abreve }c t\IeC {\h a} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}M\IeC {\^o} h\IeC {\`\i }nh th\IeC {\d \uhorn }c th\IeC {\h \ecircumflex } li\IeC {\^e}n k\IeC {\'\ecircumflex }t}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}M\IeC {\^o} h\IeC {\`\i }nh quan h\IeC {\d \ecircumflex } (B\IeC {\h a}ng l\IeC {\uhorn }u trong CSDL)}{6}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {3}Ph\IeC {\^a}n t\IeC {\'\i }ch thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex }}{8}{chapter.3}
+\contentsline {chapter}{\numberline {4}Code}{9}{chapter.4}
+\contentsline {chapter}{\numberline {5}Ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn }}{10}{chapter.5}
+\contentsline {chapter}{\numberline {6}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{11}{chapter.6}
+\contentsline {chapter}{\numberline {7}Version Control}{12}{chapter.7}
+\contentsline {chapter}{T\IeC {\`a}i li\IeC {\d \ecircumflex }u tham kh\IeC {\h a}o}{13}{section*.4}

@@ -41,7 +41,7 @@ tabsize=3
 {\fontsize{16}{19}\fontfamily{cmr}\selectfont TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI\\
 VIỆN CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG}\\
 \textbf{------------*******---------------}\\[1cm]
-\includegraphics[scale=0.13]{hust.jpg}\\[1.3cm]
+%\includegraphics[scale=0.13]{hust.jpg}\\[1.3cm]
 
 {\fontsize{32}{43}\fontfamily{cmr}\selectfont BÁO CÁO}\\[0.1cm]
 {\fontsize{38}{45}\fontfamily{cmr}\fontseries{b}\selectfont MÔN HỌC}\\[0.2cm]
@@ -111,34 +111,11 @@ trường	hợp	kiểm	thử cho menu	điện	tử phục	vụ nhà	hàng (đặ
 
 
 \chapter{Đặc tả}
-\section{Đặc tả chức năng}
+%\section Đặc tả chức năng
 Biểu đồ luồng dữ liệu:\\
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.7]{DFD.png}
-\caption{Biểu đồ luồng dữ liệu}
-\end{figure}
-
-\section{Đặc tả dữ liệu}
-\subsection{Mô hình thực thể liên kết}
-\begin{figure}
-\centering
-\includegraphics[scale=0.4]{DuLieu.png}
-\caption{Sơ đồ thực thể liên kết}
-\end{figure}
-\subsection{Mô hình quan hệ (Bảng lưu trong CSDL)}
-\textbf{Ban}(\underline{IDBan}, ToaDo, SoLuongChoNgoi, TrangThai, IDHoaDon)\\
-\textbf{HoaDon}(\underline{IDHoaDon}, NgayGio, TongTien, TenNhanVien)\\
-\textbf{MonAn}(\underline{IDMon}, TenMon, MoTa, GiaTien, TrangThai)\\  
-\textbf{MonAnTheoBan}(\underline{IDHoaDon, IDMon}, SoLuong) 
-
-\begin{itemize}
-\item Bảng \textbf{Ban} bao gồm các thuộc tính \textbf{IDBan}, \textbf{ToaDo} để xác định vị trí của bàn trong nhà hàng; thuộc tính \textbf{SoLuongChoNgoi} cho biết bàn có bao nhiêu chỗ để sắp xếp khách cho phù hợp; thuộc tính \textbf{TrangThai} cho biết bàn còn trống hay đã có khách (chỉ nhận giá trị 0 hoặc 1 tương ứng với bàn còn trống và đã có khách); thuộc tính \textbf{IDHoaDon} là khóa ngoài tham chiếu đến thuộc tính \textbf{IDHoaDon} của bảng \textbf{HoaDon} để xác định hóa đơn tương ứng với từng bàn.
-\item Bảng \textbf{HoaDon} bao gồm các thuộc tính \textbf{IDHoaDon} phân biệt các hóa đơn của các khách khác nhau; thuộc tính \textbf{NgayGio} cho biết hóa đơn đó được lập vào ngày nào; thuộc tính \textbf{TongTien} cho biết giá trị của hóa đơn (tổng số tiền mà khách hàng phải thanh toán), thuộc tính này có thể tính từ thuộc tính \item{GiaTien} của bảng \textbf{MonAn} nhưng để thuận tiện cho việc thống kê (tránh phải truy xuất CSDL nhiều lần) ta tách riêng thành một thuộc tính; thuộc tính \textbf{TenNhanVien} cho biết tên nhân viên lập hóa đơn.
-\item Bảng \textbf{MonAn} bao gồm các thuộc tính \textbf{IDMonAn}, \textbf{TenMon} để xác định tên món ăn, thuộc tính \textbf{MoTa} để mô tả chi tiết về món ăn, thuộc tính \textbf{GiaTien} cho biết giá của món ăn đó; thuộc tính \textbf{TrangThai} cho biết nhà hàng hôm nay có món đó không (chỉ nhận giá trị 0 (tương ứng với không) hoặc 1 (tương ứng với có)).
-\item Bảng \textbf{MonAnTheoBan} liệt kê danh sách các món ăn và số lượng của từng món của 1 bàn   
-\end{itemize}
-
+\begin{center}
+%\includegraphics[scale=0.7]{DFD.png}\\
+\end{center}
 \chapter{Phân tích thiết kế}
 \chapter{Code}
 \chapter{Kiểm thử}
@@ -152,6 +129,13 @@ Qua bài tập lớp này, chúng em đã rèn luyện được kiến thức:
 	\item Phát triển dự án theo hệ thống, từng bước một: phân tích, đặc tả, thiết kế, lập trình, kiểm thử. 
 	\item Sử dụng các công cụ, biểu đồ trong từng khâu thiết kế như DFD, FSO, Use-case, UML classes.
 \end{itemize}
+
+%\section Đặc tả dữ liệu
+Biểu đồ thực thể liên kết\\
+\begin{center}
+%\includegraphics[scale=0.7]{DuLieu.png}\\
+\end{center}
+
 
 
 \chapter{Version Control}
