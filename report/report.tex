@@ -32,6 +32,10 @@ tabsize=3
 
 
 \newcommand{\ig}{\includegraphics}
+\usepackage{tabularx}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 \begin{document}
 \thispagestyle{empty}
 \thisfancypage{
@@ -142,6 +146,97 @@ Biểu đồ luồng dữ liệu:\\
 \chapter{Phân tích thiết kế}
 \chapter{Code}
 \chapter{Kiểm thử}
+\section{Kiểm thử hộp đen}
+Đối tương kiểm thử là một modular thu ngân trong hệ thống order phục vụ nhà hàng ăn.
+\subsection{Phân tích đặc tả về các yêu cầu chức năng của modular thu ngân cần thực hiện.}
+Modular thu ngân là một modular thanh toán tiền cho khách hàng gồm có chức năng chính:
+\begin{itemize}
+\item Kiểm tra hóa đơn của khách hàng thông qua dữ liệu vào là \textbf{idban} và trả về hóa đơn tương ứng với bàn đó.
+\item Thanh toán hóa đơn đầu vào là \textbf{idhoadon} và trả về kết quả đã thanh toán hay chưa.
+\end{itemize}
+\subsection{Sử dụng kĩ thuật kiểm thử phân lớp tương đương để định nghĩa các testcase của các chức năng trên}
+Mỗi lần có khách thanh toán, modular thu ngân sẽ thực hiện các chức năng trên và đưa ra kết quả theo bảng sau:\\
+\textbf{•} Chức năng kiểm tra hóa đơn:
+\begin{itemize}
+\item[-] Dữ liệu vào là idban.
+\item[-] Kết quả mong muốn là hóa đơn tương ứng với bàn đó.
+\end{itemize}
+\begin{longtable}{|c|c|}
+\hline
+\textbf{ID Bàn}   			& \textbf{Kết quả mong đợi} \\
+\hline
+\textbf{<1} &\textbf{ Lỗi} \\
+\hline
+\textbf{1 - 100} & \textbf{Hóa đơn tương ứng với ID bàn.} \\
+\hline
+\textbf{>100} & \textbf{Lỗi}\\
+\hline
+\textbf{String} & \textbf{Lỗi}\\
+\hline
+\end{longtable}
+\textbf{•} Chức năng thanh toán:
+\begin{itemize}
+\item Dữ liệu vào là ID hóa đơn.
+\item Dữ liệu đầu ra thanh toán thành công hay chưa(true/false)
+\end{itemize}
+\begin{longtable}{|c|c|}
+\hline
+\textbf{ID hóa đơn}   			& \textbf{Kết quả mong đợi} \\
+\hline
+\textbf{< 1} &\textbf{ Chưa thanh toán thành công} \\
+\hline
+\textbf{$\geq$ 1} & \textbf{Hóa đơn tương ứng với ID bàn.} \\
+\hline
+\textbf{String} & \textbf{ Chưa thanh toán thành công}\\
+\hline
+\end{longtable}
+\subsection{Kiểm thử các testcase đã định nghĩa}
+Với mỗi trường hợp ta lấy đại diện thay vì kiểm tra hết các trường hợp.\\
+\\
+\textbf{•} Chức năng kiểm tra hóa đơn: lấy các testcase đại diện sau
+\begin{itemize}
+\item[1.] test1 \{ input = 0,output = lỗi \}
+\item[2.] test2 \{ input = 1,output = Hóa đơn \}
+\item[3.] test3 \{ input = 101,output = lỗi \}
+\item[4.] test4 \{ input = String,output = lỗi \}
+\end{itemize}
+\textbf{•} Chức năng thanh toán: lấy các testcase đại diên sau
+\begin{itemize}
+\item[1.] test1 \{ input = 0,output = chưa thanh toán thành công \}
+\item[2.] test2 \{ input = 1,output = thanh toán thành công \}
+\item[3.] test3 \{ input = String,output = thanh toán chưa thành công \}
+\end{itemize}
+\subsection{So sánh kết quả thu được với kì vọng(lập bảng)}
+\begin{itemize}
+\item chức năng kiểm tra hóa đơn (KTHD)
+\item chức năng thanh toán(TT)
+\end{itemize}
+\newpage
+\begin{longtable}{|L{2cm}|L{2.5cm}|L{3.1cm}|L{3.1cm}|L{2.5cm}|L{1.5cm}|}
+\hline
+\textbf{Testcase ID}   & \textbf{Testcase description} & \multicolumn{2}{c|}{ \textbf{Testcase procedures}               } & \textbf{Testcase} & \textbf{Status}      \\ 
+\cline{3-4}
+ &  &\textbf{ Step to} & \textbf{Step} & \textbf{Expected} &  \\ 
+ &  &\textbf{perform} & \textbf{Expected} & \textbf{Result} &  \\ 
+ &  &  & \textbf{Result} &  &  \\ 
+ &  &  &  &  &  \\ 
+ &  &  &  &  &  \\ 
+\hline
+KTHD1 &  Kiểm tra lỗi hóa đơn khi idban là số nguyên < 0& Điên giá trị idban $\leq$ 0(-1) vào filed có nhã idban rồi click vào nút kiểm tra & Kết quả thu được màn hình báo lỗi(Không có bàn đó)&  &  \\ 
+\hline
+KTHD2 &  Kiểm tra đưa ra hóa đơn khi idban 1-100 & Điên giá trị 0 $\leq$ idban $\leq$ 100(10) vào filed có nhã idban rồi click vào nút kiểm tra & Kết quả thu được màn hình đưa ra 1 hóa đơn tương ứng với bàn đó&  &  \\ 
+\hline
+KTHD3 &  Kiểm tra lỗi hóa đơn khi idban là số nguyên > 100& Điên giá trị idban > 100(102) vào filed có nhã idban rồi click vào nút kiểm tra & Kết quả thu được màn hình báo lỗi(Không có bàn đó)&  &  \\ 
+\hline
+KTHD4 &  Kiểm tra lỗi hóa đơn khi idban là một kí tự hoặc xâu kí tư khác số nguyên & Điên giá trị idban là xâu kí tự hoặc kí tự khác sô nguyên(abc)vào filed có nhã idban rồi click vào nút kiểm tra & Kết quả thu được màn hình báo lỗi(Không có bàn đó)&  &  \\ 
+\hline
+TT1 &  Kiểm tra lỗi thanh toán hóa đơn không thành công đầu vào là số nguyên < 1 &Ấn nút thanh toán điền vào trường field có nhãn idhoadon < 1(0) vào rồi click 'Ok'& Kết quả thu được màn hình báo chưa thanh toán thanh công &  &  \\ 
+\hline
+TT2 &  Kiểm tra lỗi thanh toán hóa đơn  thành công đầu vào là số nguyên $\geq$ 1 &Ấn nút thanh toán điền vào trường field có nhãn idhoadon $\geq$ 1(10) vào rồi click 'Ok'& Kết quả thu được màn hình báo chưa thanh toán thanh công &  &  \\ 
+\hline
+TT3 &  Kiểm tra lỗi thanh toán hóa đơn không thành công đầu vào là xâu hoặc chuỗi kí tự khác số nguyên &Ấn nút thanh toán điền vào trường field có nhãn idhoadon một xâu hoặc kí tự khác số nguyên(abc) vào rồi click 'Ok'& Kết quả thu được màn hình báo chưa thanh toán thanh công &  &  \\ 
+\hline
+\end{longtable}
 \chapter{Kết luận}
 Hệ thống menu điện tử xây dựng còn khá hạn chế, đối với từng mô hình nhà hàng khác nhau cần sửa đổi nhiều về nhân sự, kích thước bàn,...Ngoài ra, trong quá trình code sẽ phát sinh ra rất nhiều trường hợp, tiểu tiết mà chúng em chưa xét đến được.\\
 
