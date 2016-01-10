@@ -190,7 +190,7 @@ Mô hình hóa phần mềm với UML:
 \newgeometry{a4paper,left=1in,right=0in,top=0in,bottom=0.5in,nohead}
 \begin{landscape}
 	\section{Biểu đồ Class}
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.50]{UML-Final.png}
 		\caption{Class - Diagram}
@@ -198,9 +198,9 @@ Mô hình hóa phần mềm với UML:
 \end{landscape}
 \restoregeometry
 \section{Biểu đồ UseCase}
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.2]{UseCase.png}
+		\includegraphics[scale=0.35]{UseCase1.png}
 		\caption{UseCase - Diagram}
 	\end{figure}
 
@@ -268,6 +268,7 @@ Mỗi lần có khách thanh toán, modular thu ngân sẽ thực hiện các ch
 \hline
 \textbf{String} & \textbf{Lỗi}\\
 \hline
+\caption{Kiểm thử với chức năng kiểm tra hóa đơn}
 \end{longtable}
 \textbf{•} Chức năng thanh toán:
 \begin{itemize}
@@ -284,6 +285,7 @@ Mỗi lần có khách thanh toán, modular thu ngân sẽ thực hiện các ch
 \hline
 \textbf{String} & \textbf{ Chưa thanh toán thành công}\\
 \hline
+\caption{Kiểm thử với chức năng thanh toán}
 \end{longtable}
 \subsection{Kiểm thử các testcase đã định nghĩa}
 Với mỗi trường hợp ta lấy đại diện thay vì kiểm tra hết các trường hợp.\\
@@ -331,24 +333,29 @@ TT2 &  Kiểm tra lỗi thanh toán hóa đơn  thành công đầu vào là s�
 \hline
 TT3 &  Kiểm tra lỗi thanh toán hóa đơn không thành công đầu vào là xâu hoặc chuỗi kí tự khác số nguyên &Ấn nút thanh toán điền vào trường field có nhãn idhoadon một xâu hoặc kí tự khác số nguyên(abc) vào rồi click 'Ok'& Kết quả thu được màn hình báo chưa thanh toán thanh công &  &  \\ 
 \hline
+\caption{Bảng testcase hộp đen}
 \end{longtable}
 \section{Kiểm thử hộp trắng}
 \subsection{Đoạn code đem ra kiểm thử }
 \lstinputlisting[language=java, firstline=0, lastline=25]{code.java}
 \subsection{Sơ đồ thuật toán và đồ thị chương trình} 
 Ta xây đựng sơ đồ thuật toán và đồ thi luồng chương trình.
-\begin{figure}[!]
+\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{KTHopTrang.png}
 		\caption{Phân tích cấu trúc}
-\end{figure}\begin{figure}[!]
-		\centering
-		\includegraphics[scale=0.4]{KTHopTrangSoDo.png}
+\end{figure}
+\begin{figure}[H]
+\centering
+\begin{minipage}[b]{0.45\linewidth}
+\includegraphics[scale=0.4]{KTHopTrangSoDo.png}
 		\caption{Sơ đồ thuật toán}
-\end{figure}\begin{figure}[!]
-		\centering
-		\includegraphics[scale=0.4]{KTHopTrangDoThi.png}
+\end{minipage}
+\quad				
+\begin{minipage}[b]{0.45\linewidth}
+\includegraphics[scale=0.4]{KTHopTrangDoThi.png}
 		\caption{Đồ thị chương trình}
+\end{minipage}					
 \end{figure}
 
 Dựa vào đồ thị chương trình ta thiết kế các testcase kiểm thử cho modul nhưng theo thực tế code có 2 trường hợp theo đồ thị không thể xảy ra tổng cộng ta có 5 trường hợp kiểm thử cho modul này.
