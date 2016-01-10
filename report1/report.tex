@@ -11,6 +11,7 @@
 \usepackage{amsmath}
 \usepackage{lscape}
 \usepackage{array}
+\usepackage{float}	
 \newmdenv[linecolor=black,skipabove=\topsep,skipbelow=\topsep,
 leftmargin=-5pt,rightmargin=-5pt,
 innerleftmargin=5pt,innerrightmargin=5pt]{mybox}
@@ -32,6 +33,15 @@ tabsize=3
     urlcolor=black
 }
 
+\usepackage[english]{babel}
+\addto\captionsenglish{%
+ \renewcommand\chaptername{Phần}
+ \renewcommand{\contentsname}{Mục lục} 
+ \renewcommand{\listtablename}{Danh sách bảng}
+ \renewcommand{\listfigurename}{Danh sách hình vẽ}
+ \renewcommand{\tablename}{Bảng}
+ \renewcommand{\figurename}{Hình}
+}
 
 \newcommand{\ig}{\includegraphics}
 \usepackage{tabularx}
@@ -73,15 +83,20 @@ Phan Anh Tú & 20134501  & 84307 \\
 
 \end{center}
 \newpage
+
 \tableofcontents
+\listoffigures
+\listoftables
+
+
 \chapter*{Mở đầu}
 \addcontentsline{toc}{chapter}{Mở đầu}
 %to do
 Công nghệ phần mềm là lĩnh vực được chú trọng, thu hút đông đảo kĩ sư nhất trong ngành công nghệ thông tin hiện nay. Nó đòi hỏi sự sáng tạo trong ý tưởng, nghiêm khắc trong các quy trình, chăm chỉ, bền bỉ trong công việc, và rất nhiều yếu tố khác nữa. Học phần "Nhập môn công nghệ phần mềm" là học phần tất yêu đối với sinh viên, kĩ sư công nghệ phần mềm. Được học học phần này là niềm thú vị đối với chúng em.\\
 
-Trong quá trình học tập, chúng em đã chọn đề tài bài tập lớn "Tìm	hiểu đặc	tả yêu	cầu,	phân	tích	thiết	kế hệ thống	và	thiết	kế một	số
-trường	hợp	kiểm	thử cho menu	điện	tử phục	vụ nhà	hàng (đặt	món	ăn,	huỷ món	
-ăn,	báo	nhà	bếp,	thống	kê	theo	ngày)." Nhóm chúng em bao gồm:\\
+Trong quá trình học tập, chúng em đã chọn đề tài bài tập lớn "Tìm	 hiểu đặc	tả yêu	cầu,	phân	tích	thiết	kế hệ thống	và	thiết	kế một	số
+trường	hợp	kiểm	 thử cho menu	điện	 tử phục	 vụ nhà	hàng (đặt món ăn,	huỷ món	
+ăn,	báo	nhà	bếp,	thống kê theo ngày)." Nhóm chúng em bao gồm:\\
 \begin{longtable}{l c c}
 
 Họ và tên & email  & Di động\\
@@ -89,10 +104,10 @@ Họ và tên & email  & Di động\\
 Nguyễn Tuấn Đạt &  tuandat95cbn@gmail.com & 0164 399 5246 \\
 Trần Văn  Đức & tv.duc95@gmail.com & 0169 314 0664 \\
 Đặng Quang Trung & 20134145@student.hust.edu.vn  & 0917128265 \\
-Phan Anh Tú & 20134501  & 84307 \\
+Phan Anh Tú & anhtu23795@gmail.com  & 0963058384 \\
 \end{longtable}
 
-Chúng em cảm ơn thầy đã giảng dạy học phần và hướng dẫn chúng em làm bài tập lớn.
+Chúng em cảm ơn thầy giáo TS.Nguyễn Thanh Hùng đã giảng dạy và hướng dẫn chúng em làm bài tập lớn này.
 
 \chapter{Giới thiệu Project}
 \begin{itemize}
@@ -129,27 +144,29 @@ trường	hợp	kiểm	thử cho menu	điện	tử phục	vụ nhà	hàng (đặ
 \section{Đặc tả}
 \subsection{Đặc tả chức năng}
 Biểu đồ luồng dữ liệu:\\
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{DFD.png}
 \caption{Biểu đồ luồng dữ liệu}
 \end{figure}
+
 \subsection{Máy trạng thái}
 Sử dụng máy trạng thái để làm rõ nghĩa hơn cho trạng thái đối tượng sử dụng trong sơ đồ
-\begin{figure}[!]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{FSM_ban.png}
 \caption{Máy trạng thái bàn}
 \end{figure}
-\begin{figure}[!]
+
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{FSM_monan.png}
 \caption{Máy trạng thái món ăn}
 \end{figure}
-\subsection{Đặc tả dữ liệu}
 
+\subsection{Đặc tả dữ liệu}
 \subsubsection{Mô hình thực thể liên kết}
-\begin{figure}[!]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.4]{DuLieu.png}
 \caption{Sơ đồ thực thể liên kết}
@@ -203,7 +220,7 @@ Mô hình hóa phần mềm với UML:
 	\item Kết nối giữa client và server dựa vào mạng wifi, đặt ip tĩnh cho các thiết bị.
 	\\$\Rightarrow$ Nhẹ nhàng, linh động.
 	\\ Trao đổi thông tin giữa client và server thông qua socket, giao thức TCP.
-	\\ Socket là một cổng logic nằm giữa process ứng dụng và end-transport protocol. Có hai loại socket thường dùng là Stream Socket (dựa trên giao thức TCP) và Datagram Socket (dựa trên giao thức UDP). Một TCP/IP socket bao gồm một địa chỉ IP và một cổng. Địa chỉ IP dùng để xác định máy tính trên mạng còn cổng được sử dụng để xác định tiến trình.
+	\\ Socket là điểm truy cập dịch vụ của tầng giao vận (trasport layer), các tiến trình tầng ứng dụng (application process) sẽ sử dụng Socket gọi dịch vụ của tầng giao vận để trao đổi thông điệp. Có hai loại socket thường dùng là Stream Socket (dựa trên giao thức TCP) và Datagram Socket (dựa trên giao thức UDP). Một TCP/IP socket được định danh bởi một địa chỉ IP và số hiệu c cổng. Địa chỉ IP dùng để xác định máy tính trên mạng còn cổng được sử dụng để xác định tiến trình.
 	\\ Ở đây ta sử dụng giao thức TCP để đảm bảo dữ liệu truyền đến nơi nhận một cách đáng tin cậy và đúng thứ tự.
 	\\ Giải thuật cho client:
 	\\ \hspace*{3mm} - Xác định địa chỉ server
@@ -225,14 +242,14 @@ Mô hình hóa phần mềm với UML:
 \end{itemize}
 \chapter{Kiểm thử}
 \section{Kiểm thử hộp đen}
-Đối tương kiểm thử là một modular thu ngân trong hệ thống order phục vụ nhà hàng ăn.
+Đối tưng kiểm thử là một modular thu ngân trong hệ thống order phục vụ nhà hàng ăn.
 \subsection{Phân tích đặc tả về các yêu cầu chức năng của modular thu ngân cần thực hiện.}
 Modular thu ngân là một modular thanh toán tiền cho khách hàng gồm có chức năng chính:
 \begin{itemize}
 \item Kiểm tra hóa đơn của khách hàng thông qua dữ liệu vào là \textbf{idban} và trả về hóa đơn tương ứng với bàn đó.
 \item Thanh toán hóa đơn đầu vào là \textbf{idhoadon} và trả về kết quả đã thanh toán hay chưa.
 \end{itemize}
-\subsection{Sử dụng kĩ thuật kiểm thử phân lớp tương đương để định nghĩa các testcase của các chức năng trên}
+\subsection{Sử dụng kĩ thuật kiểm thử phân lớp tương đương để định nghĩa các testcase của các chức năng}
 Mỗi lần có khách thanh toán, modular thu ngân sẽ thực hiện các chức năng trên và đưa ra kết quả theo bảng sau:\\
 \textbf{•} Chức năng kiểm tra hóa đơn:
 \begin{itemize}
