@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.6)  10 JAN 2016 13:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.6)  10 JAN 2016 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1374,12 +1374,7 @@ File: DFD.png Graphic file (type png)
  <use DFD.png>
 Package pdftex.def Info: DFD.png used on input line 149.
 (pdftex.def)             Requested size: 399.43959pt x 313.54427pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--151
-
- []
-
-[7
+ [7
 
 ]
 
@@ -1500,9 +1495,46 @@ Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 187.
 
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 189.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 189.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 189.
+
+
+Package hyperref Warning: Composite letter `\textasciigrave+\ocircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 189.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ocircumflex' on input line 189.
+
+<UseCase1.png, id=225, 1425.82687pt x 1228.59pt>
+File: UseCase1.png Graphic file (type png)
+ <use UseCase1.png>
+Package pdftex.def Info: UseCase1.png used on input line 192.
+(pdftex.def)             Requested size: 484.77473pt x 417.71507pt.
+
+Overfull \hbox (29.53062pt too wide) in paragraph at lines 192--193
+ [][] 
+ []
+
 [12
 
-]
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.195 ...in,right=0in,top=0in,bottom=0.5in,nohead}
+                                                   <./UseCase1.png>]
 
 Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 
@@ -1540,77 +1572,36 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 192.
+(hyperref)                removing `\h' on input line 197.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 192.
+(hyperref)                removing `\ecircumflex' on input line 197.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 192.
+(hyperref)                removing `\dj' on input line 197.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 192.
+(hyperref)                removing `\textasciigrave' on input line 197.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 192.
+(hyperref)                removing `\ocircumflex' on input line 197.
 
-<UML-Final.png, id=229, 1623.06375pt x 698.61pt>
+<UML-Final.png, id=230, 1623.06375pt x 698.61pt>
 File: UML-Final.png Graphic file (type png)
  <use UML-Final.png>
-Package pdftex.def Info: UML-Final.png used on input line 195.
+Package pdftex.def Info: UML-Final.png used on input line 200.
 (pdftex.def)             Requested size: 811.52989pt x 349.30414pt.
 
-Overfull \hbox (2.61804pt too wide) in paragraph at lines 195--196
+Overfull \hbox (2.61804pt too wide) in paragraph at lines 200--201
  [][] 
  []
 
 [13
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.198 \end{landscape}
-                      <./UML-Final.png>]
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 200.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 200.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 200.
-
-
-Package hyperref Warning: Composite letter `\textasciigrave+\ocircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 200.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 200.
-
-<UseCase1.png, id=235, 1425.82687pt x 1228.59pt>
-File: UseCase1.png Graphic file (type png)
- <use UseCase1.png>
-Package pdftex.def Info: UseCase1.png used on input line 203.
-(pdftex.def)             Requested size: 499.04689pt x 430.01294pt.
-
-Overfull \hbox (43.80278pt too wide) in paragraph at lines 203--204
- [][] 
- []
-
-[14
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
@@ -1618,8 +1609,8 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.207 \chapter
-              {Code} <./UseCase1.png>]
+l.203 \end{landscape}
+                      <./UML-Final.png>]
 Ph\IeC {\`\acircumflex }n 4.
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
@@ -1648,9 +1639,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--241
 
  []
 
-[15
+[14
 
-] [16]
+
+
+] [15]
 Ph\IeC {\`\acircumflex }n 5.
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
@@ -1901,7 +1894,7 @@ Underfull \vbox (badness 10000) detected at line 272
 Overfull \vbox (18.62888pt too high) has occurred while \output is active []
 
 
-[17
+[16
 
 ]
 Underfull \vbox (badness 10000) detected at line 289
@@ -2003,7 +1996,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 306.
 
-[18]
+[17]
 Overfull \hbox (0.92897pt too wide) in paragraph at lines 314--315
 []|\T5/cmr/bx/n/14 Status|  
  []
@@ -2022,7 +2015,7 @@ Overfull \hbox (37.81165pt too wide) in alignment at lines 312--337
 Underfull \vbox (badness 10000) detected at line 337
  []
 
-[19]
+[18]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 338.
@@ -2089,7 +2082,7 @@ File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) (./code.java
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `T5/cmtt/m/n' tried instead on input line 1.
- [20])
+ [19])
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ohorn' on input line 341.
@@ -2142,13 +2135,13 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ohorn' on input line 341.
 
-<KTHopTrang.png, id=288, 794.97pt x 614.295pt>
+<KTHopTrang.png, id=284, 794.97pt x 614.295pt>
 File: KTHopTrang.png Graphic file (type png)
  <use KTHopTrang.png>
 Package pdftex.def Info: KTHopTrang.png used on input line 345.
 (pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
 
-<KTHopTrangSoDo.png, id=289, 614.295pt x 794.97pt>
+<KTHopTrangSoDo.png, id=285, 614.295pt x 794.97pt>
 File: KTHopTrangSoDo.png Graphic file (type png)
  <use KTHopTrangSoDo.png>
 Package pdftex.def Info: KTHopTrangSoDo.png used on input line 351.
@@ -2158,7 +2151,7 @@ Overfull \hbox (40.85518pt too wide) in paragraph at lines 351--352
 [][]
  []
 
-<KTHopTrangDoThi.png, id=290, 614.295pt x 794.97pt>
+<KTHopTrangDoThi.png, id=286, 614.295pt x 794.97pt>
 File: KTHopTrangDoThi.png Graphic file (type png)
  <use KTHopTrangDoThi.png>
 Package pdftex.def Info: KTHopTrangDoThi.png used on input line 356.
@@ -2168,7 +2161,7 @@ Overfull \hbox (40.85518pt too wide) in paragraph at lines 356--357
 [][]
  []
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2188,7 +2181,7 @@ Overfull \hbox (37.81165pt too wide) in alignment at lines 362--387
 Underfull \vbox (badness 10000) detected at line 387
  []
 
-[22pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2200,7 +2193,7 @@ r (name{figure.5.3}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.387 \end{longtable}
-                      <./KTHopTrangSoDo.png> <./KTHopTrangDoThi.png>] [23]
+                      <./KTHopTrangSoDo.png> <./KTHopTrangDoThi.png>] [22]
 Ph\IeC {\`\acircumflex }n 6.
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
@@ -2225,26 +2218,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
-[24
+[23
 
 ]
 Ph\IeC {\`\acircumflex }n 7.
 
-LaTeX Warning: Hyper reference `label_name' on page 25 undefined on input line 
+LaTeX Warning: Hyper reference `label_name' on page 24 undefined on input line 
 402.
 
-<vc1.png, id=316, 1028.34187pt x 578.16pt>
+<vc1.png, id=312, 1028.34187pt x 578.16pt>
 File: vc1.png Graphic file (type png)
  <use vc1.png>
 Package pdftex.def Info: vc1.png used on input line 403.
 (pdftex.def)             Requested size: 411.32947pt x 231.2599pt.
 
-<vc2.png, id=317, 1028.34187pt x 578.16pt>
+<vc2.png, id=313, 1028.34187pt x 578.16pt>
 File: vc2.png Graphic file (type png)
  <use vc2.png>
 Package pdftex.def Info: vc2.png used on input line 404.
 (pdftex.def)             Requested size: 411.32947pt x 231.2599pt.
- [25
+ [24
 
  <./vc1.png (PNG copy)> <./vc2.png (PNG copy)>]
 
@@ -2261,7 +2254,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 408.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 410.
-[26
+[25
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 410.
@@ -2269,7 +2262,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 410.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 410.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 410.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: E992291FA1B01158B4119161FD457428;1764.
+(rerunfilecheck)             Checksum: F0D8F5D46BE6BBAEFC43281C949E344E;1764.
 
 
 LaTeX Warning: There were undefined references.
@@ -2277,8 +2270,8 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 410.
  ) 
 Here is how much of TeX's memory you used:
- 16878 strings out of 493304
- 273036 string characters out of 6139872
+ 16877 strings out of 493304
+ 273029 string characters out of 6139872
  401438 words of memory out of 5000000
  19975 multiletter control sequences out of 15000+600000
  23660 words of font info for 40 fonts, out of 8000000 for 9000
@@ -2293,10 +2286,10 @@ st/fonts/type1/vntex/urwvn/uhvr8v.pfb></usr/share/texlive/texmf-dist/fonts/type
 re/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/vntex/vnr/vnti12.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/vntex/vnr/vntt8.pfb>
-Output written on report.pdf (26 pages, 1322826 bytes).
+Output written on report.pdf (25 pages, 1322618 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
- 97 named destinations out of 1000 (max. 500000)
+ 378 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
+ 96 named destinations out of 1000 (max. 500000)
  261 words of extra memory for PDF output out of 10000 (max. 10000000)
 
