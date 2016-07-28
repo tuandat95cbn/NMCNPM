@@ -1,4 +1,4 @@
-# NMCNPM
+# Nhập môn công nghệ phần mềm
 Soict-20151
 
 Công việc chung: Deadline 23h59' ngày 7/12/2015
